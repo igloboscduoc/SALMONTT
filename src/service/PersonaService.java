@@ -1,6 +1,6 @@
 package service;
 
-import model.Persona;
+import model.Proveedor;
 import repository.PersonaRepositorio;
 import util.Validador;
 
@@ -12,12 +12,12 @@ public class PersonaService {
         this.repositorio = repositorio;
     }
 
-    public void guardarPersona (Persona persona){
-        int tempEdad = persona.getEdad();  // rescatamos edad de la persona
+    public void guardarPersona (Proveedor proveedor){
+        int tempEdad = proveedor.getEdad();  // rescatamos edad de la persona
         //System.out.println("Edad: " + tempEdad);
         if (!Validador.esEdadValida(tempEdad)){
             throw new IllegalArgumentException("Edad no valida");
         }
-        repositorio.guardar(persona);
+        repositorio.guardar(proveedor);
     }
 }

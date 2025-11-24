@@ -1,19 +1,19 @@
 package repository;
 
-import model.Persona;
+import model.Proveedor;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class PersonaRepositorio {
 
-    private final List<Persona> bd = new ArrayList<>();
+    private final List<Proveedor> bd = new ArrayList<>();
 
-    public void guardar (Persona persona){
-        bd.add(persona);
+    public void guardar (Proveedor proveedor){
+        bd.add(proveedor);
     }
 
-    public List<Persona> listar(){
+    public List<Proveedor> listar(){
         return List.copyOf(bd);
     }
 

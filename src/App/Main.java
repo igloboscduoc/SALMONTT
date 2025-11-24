@@ -1,9 +1,12 @@
 package App;
 
 import model.Direccion;
-import model.Persona;
+import model.Producto;
+import model.Proveedor;
 import repository.PersonaRepositorio;
 import service.PersonaService;
+
+import java.util.ArrayList;
 
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
@@ -14,10 +17,14 @@ public class Main {
         var repositorio = new PersonaRepositorio();
         var service = new PersonaService(repositorio);
 
+        ArrayList<Producto> inventario = new ArrayList<>();
+        Producto> inventario = new ArrayList<>();
+
+
 
         var direccion1 = new Direccion("San Diego", 161, "Santiago", "RM");
 
-        var persona1 = new Persona("19375974-2", "Ignacio", "Lobos", "Chacon",29, direccion1);
+        var persona1 = new Proveedor(01 , "Ignacio SA", direccion1);
 
 
 
@@ -25,12 +32,13 @@ public class Main {
 
         service.guardarPersona(persona1);
 
-        repositorio.listar().forEach( persona-> {
-            persona.mostrarInformacion();
+        repositorio.listar().forEach(proveedor -> {
+            proveedor.mostrarInformacion();
         });
 
 
         System.out.println("\n");
+
 
 
     }
