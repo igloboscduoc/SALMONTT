@@ -10,7 +10,7 @@ public class Producto {
 
     private int id;
     private String nombre;
-    private double precio;
+    private int precio;
     private int stock;
 
     // Inicio Constructor //
@@ -21,7 +21,7 @@ public class Producto {
      * @param precio
      * @param stock
      */
-    public Producto(int id, String nombre, double precio, int stock) {
+    public Producto(int id, String nombre, int precio, int stock) {
         this.id = id;
         this.nombre = nombre;
         this.precio = precio;
@@ -47,6 +47,6 @@ public class Producto {
      */
     @Override
     public String toString() {
-        return "Producto: " + id + " - " + nombre + ", precio: " + precio + ", stock: " + stock;
+        return id + ";" + nombre + ";" + precio + ";" + stock;
     }
 }

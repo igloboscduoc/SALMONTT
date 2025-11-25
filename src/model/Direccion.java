@@ -65,7 +65,7 @@ public class Direccion {
 
     // Inicio metodo toString//
     /**
-     * Retorna direcci|on completa como String
+     * Configuracion formato de salida
      * @return direccion completa como String
      */
     @Override

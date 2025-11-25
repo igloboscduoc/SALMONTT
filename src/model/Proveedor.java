@@ -1,5 +1,9 @@
 package model;
 
+/**
+ * Representa un proveedor indicando id, nombre y direccion
+ */
+
 public class Proveedor {
 
     private int id;
@@ -7,19 +11,24 @@ public class Proveedor {
     private Direccion direccion;
 
 
-
-    // Constructor //
+    // Inicio Constructor //
+    /**
+     * Constructor que inica los datos de un Proveedor
+     * @param id
+     * @param nombre
+     * @param direccion
+     */
     public Proveedor(int id, String nombre, Direccion direccion) {
         this.id= id;
         this.nombre = nombre;
         this.direccion = direccion;
     }
-    // Fin Constructor
+    // Fin Constructor //
 
 
 
     // Inicio metodos Getter //
-    public String getId() {
+    public int getId() {
         return id;
     }
     public String getNombre() {
@@ -30,8 +39,13 @@ public class Proveedor {
 
 
     // metodo para mostrar informacion //
-    //@Override
-    public String mostrarInformacion() {
+
+    /**
+     * Configuracion formato de salida
+     * @return detalle del proveedor como String
+     */
+    @Override
+    public String toString() {
         return (
             "Proveedor{" + '\n' +
             "Id = " + id + '\n' +
