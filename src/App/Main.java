@@ -30,7 +30,7 @@ public class Main {
         // se instancia la clase Proveedor y agrega a la lista de proveedores con 2 objetos
         var provee1 = new Proveedor(Validador.IDvalida(1, proveedores), "Ignacio SA", direccion1);
         proveedores.add(provee1);
-        var provee2 = new Proveedor(Validador.IDvalida(1, proveedores), "Ignacio SA", direccion2);
+        var provee2 = new Proveedor(Validador.IDvalida(1, proveedores), "Empresas otros SA", direccion2);
         proveedores.add(provee2);
 
 

@@ -49,6 +49,7 @@ public class Proveedor {
         return (
             "Proveedor{" + '\n' +
             "Id = " + id + '\n' +
+            "Nombre = " + nombre + '\n' +
             "direccion p= " + direccion + "\n" +
             '}');
     }
